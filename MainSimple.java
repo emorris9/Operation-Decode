@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class MainSimple {
@@ -11,11 +9,13 @@ public class MainSimple {
     String input = console.nextLine();
     String result = "";
     StringBuilder sb = new StringBuilder(result);
-    if (input.substring(0) == "-") {
+    char start = input.charAt(0);
+
+    if (start == '-') {
       for (int i = 1; i < input.length(); i++) {
         char c = input.charAt(i);
         c -= 2;
-        sb.insert(i, c);
+        sb.insert((i-1), c);
       }
     } else {
       for (int i = 0; i < input.length(); i++) {
@@ -24,7 +24,7 @@ public class MainSimple {
         sb.insert(i, c);
       }
     }
-    if (input.substring(0) == "-") {
+    if (start == '-') {
       System.out.println("Your decoded message is: " + sb);
     } else {
       System.out.println("Your encoded message is: -" + sb);
