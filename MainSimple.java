@@ -7,6 +7,8 @@ public class MainSimple {
     System.out.println("Enter your message:");
     final Scanner console = new Scanner(System.in);
     String input = console.nextLine();
+    System.out.println("Enter your secret code:");
+    int code = console.nextInt();
     String result = "";
     StringBuilder sb = new StringBuilder(result);
     char start = input.charAt(0);
@@ -14,13 +16,13 @@ public class MainSimple {
     if (start == '-') {
       for (int i = 1; i < input.length(); i++) {
         char c = input.charAt(i);
-        c -= 2;
-        sb.insert((i-1), c);
+        c += (code);
+        sb.insert((i - 1), c);
       }
     } else {
       for (int i = 0; i < input.length(); i++) {
         char c = input.charAt(i);
-        c += 2;
+        c -= (code);
         sb.insert(i, c);
       }
     }
