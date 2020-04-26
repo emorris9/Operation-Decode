@@ -12,7 +12,7 @@ public class MainSimple {
     String result = "";
     StringBuilder sb = new StringBuilder(result);
     char start = input.charAt(0);
-    char end = input.charAt(input.length());
+    char end = input.charAt(input.length()-1);
 
     if (start == ' ' && end == ' ') {
       for (int i = 1; i < input.length() - 1; i++) {
@@ -27,10 +27,12 @@ public class MainSimple {
         sb.insert(i, c);
       }
     }
-    if (start == '-') {
-      System.out.println("Your decoded message is: " + sb);
+    if (start == ' ' && end == ' ') {
+      System.out.println("Your decoded message is:");
+      System.out.println(sb);
     } else {
-      System.out.println("Your encoded message is:  " + sb + " ");
+      System.out.println("Your encoded message is:");
+      System.out.println(" " + sb + " ");
     }
   }
 }
