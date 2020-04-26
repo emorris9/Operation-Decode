@@ -12,7 +12,7 @@ public class MainSimple {
     String result = "";
     StringBuilder sb = new StringBuilder(result);
     char start = input.charAt(0);
-    char end = input.charAt(input.length())
+    char end = input.charAt(input.length());
 
     if (start == ' ' && end == ' ') {
       for (int i = 1; i < input.length() - 1; i++) {
