@@ -12,9 +12,10 @@ public class MainSimple {
     String result = "";
     StringBuilder sb = new StringBuilder(result);
     char start = input.charAt(0);
+    char end = input.charAt(input.length())
 
-    if (start == '-') {
-      for (int i = 1; i < input.length(); i++) {
+    if (start == ' ' && end == ' ') {
+      for (int i = 1; i < input.length() - 1; i++) {
         char c = input.charAt(i);
         c += (code);
         sb.insert((i - 1), c);
