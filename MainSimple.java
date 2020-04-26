@@ -30,7 +30,7 @@ public class MainSimple {
     if (start == '-') {
       System.out.println("Your decoded message is: " + sb);
     } else {
-      System.out.println("Your encoded message is: -" + sb);
+      System.out.println("Your encoded message is:  " + sb + " ");
     }
   }
 }
