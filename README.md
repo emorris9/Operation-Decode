@@ -10,7 +10,7 @@ The program will then be used again to decrypt the cipher.
 
 Here are the instructions to use the software:
 
-#### Encyrption Instructions (Spy 1):
+#### Encryption Instructions (Spy 1):
 1. Open and run the software.
 2. You will see that the first output asks for your message, input the message and press enter.
 3. Secondly, it will ask to set a password for your message, using any integer of choice greater than zero, once given, press enter again.
