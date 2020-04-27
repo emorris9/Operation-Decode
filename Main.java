@@ -6,7 +6,7 @@ public class Main {
         System.out.println("Enter your message:");
         final Scanner console = new Scanner(System.in);
         String input = console.nextLine();
-        System.out.println("Enter your secret code:");
+        System.out.println("Enter your password:");
         int code = console.nextInt();
 
         String result = "";
