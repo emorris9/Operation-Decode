@@ -1,5 +1,12 @@
 public class CryptionResult {
-    public String result;
-    public int countchar = 0;
+    public CryptionResult(final String message, final int countChar)
+    {
+        this.message = message;
+        this.countChar = countChar;
+    }
+    public final String message;
+    public final int countChar;
+
+
 
 }
