@@ -12,7 +12,7 @@ public class Main {
         String input = console.nextLine(); // Will take message
         int code = 0;
         while (code < 1) { // In case user inputs non-positive integer
-            System.out.println("Please enter a secret integer pass code greater than 0: ");
+            System.out.println("Please enter your secret integer pass code greater than 0: ");
             try {
                 code = console.nextInt();
             } catch (final InputMismatchException ex) {
